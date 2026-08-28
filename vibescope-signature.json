@@ -1,0 +1,8 @@
+{
+  "formatVersion": 1,
+  "algorithm": "Ed25519",
+  "publisherId": "augmigrow",
+  "publicKey": "MCowBQYDK2VwAyEAcfXoL5pxPEna1em6eW8HbhBVjTbU8D/Ko4u6bS83lNg=",
+  "signedDigest": "d2ede1d94e756de7596c69253a8f25780b0a33c4aae4db963664e0ad18fcdf88",
+  "signature": "5cAf7x6dN+F3ktPhak5MiAMPfSIXz2F2hm18YYuMevfkHPj5Ag4GAORe9Qs/lltqDs6lIup8QW0xAgvJ/pemBA=="
+}

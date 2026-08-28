@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>对话搜索</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="v2.css" />
+</head>
+<body>
+  <section class="search-toolbar">
+    <input id="keyword" type="search" placeholder="输入关键词，空格分隔多个关键词" autocomplete="off" autofocus />
+    <select id="mode" aria-label="关键词逻辑"><option value="AND">全部匹配</option><option value="OR">任一匹配</option></select>
+    <select id="source" aria-label="对话来源"><option value="">全部来源</option></select>
+    <select id="project" aria-label="对话项目"><option value="">全部项目</option></select>
+    <button id="search" class="search-button" type="button" title="搜索" aria-label="搜索">⌕</button>
+  </section>
+  <div id="stats" class="stats"></div>
+  <main id="results" class="results"><div class="empty-state">输入关键词开始搜索</div></main>
+  <script src="sdk.js"></script>
+  <script src="bridge.js"></script>
+</body>
+</html>

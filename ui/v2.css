@@ -1,0 +1,2 @@
+.results { height: calc(100% - 88px); }
+@media (max-width: 820px) { .results { height: calc(100% - 130px); } }
