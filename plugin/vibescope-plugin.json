@@ -1,0 +1,68 @@
+{
+  "$schema": "urn:vibescope:schema:plugin-manifest:v2",
+  "formatVersion": 2,
+  "id": "augmigrow.all-conversation-search",
+  "version": "1.0.0",
+  "name": "全部对话搜索",
+  "description": "只读搜索本机 Claude Code、Codex 与 Kimi Code 对话，并可复制恢复命令。",
+  "publisher": {
+    "id": "augmigrow",
+    "name": "官方发布"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Augmigrow/vibescope-plugins"
+  },
+  "license": "Apache-2.0",
+  "engines": {
+    "vibescope": ">=0.1.0 <1.0.0"
+  },
+  "apiVersion": "1.0",
+  "permissions": {
+    "required": [
+      "conversations:claude-code:read",
+      "conversations:codex:read",
+      "conversations:kimi-code:read",
+      "clipboard:write-text"
+    ],
+    "optional": []
+  },
+  "hostPermissions": {
+    "required": [
+      "none"
+    ],
+    "optional": [],
+    "development": []
+  },
+  "contributes": {
+    "quickTools": [
+      {
+        "id": "search",
+        "title": "全部对话搜索",
+        "entry": "ui/index.html",
+        "icons": {
+          "toolbar": "assets/icon-32.png",
+          "default": "assets/icon-128.png"
+        },
+        "instancePolicy": "single",
+        "uses": [
+          "conversations:claude-code:read",
+          "conversations:codex:read",
+          "conversations:kimi-code:read",
+          "clipboard:write-text"
+        ],
+        "window": {
+          "style": "mac",
+          "width": 900,
+          "height": 680,
+          "minWidth": 480,
+          "minHeight": 360,
+          "resizable": true
+        }
+      }
+    ]
+  },
+  "privacy": {
+    "telemetry": "none"
+  }
+}
